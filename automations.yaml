@@ -1,0 +1,22 @@
+##########################################################
+# Shut off water heater line when flood detected
+###########################################################
+
+- alias: Water Heater Flood Shut-Off
+
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.fibaro_system_fgfs101_flood_sensor_flood
+      from: 'off'
+      to: 'on'
+
+  action:
+    - service: switch.turn_off
+      entity_id: switch.water_shutoff_switch
+    - service: notify.twilio_sms
+      data:
+        message: 'Warning: Water heater flood detected, shutting off service.'
+        target:
+          - '+12023060724'
+
+

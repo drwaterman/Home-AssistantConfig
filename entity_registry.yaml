@@ -1,0 +1,48 @@
+climate.upstairs:
+  name:
+  platform: nest
+  unique_id: V4GDVN4NTNn3L8Uo2iMD-nQRzvelL57Q
+climate.dining_room:
+  name:
+  platform: nest
+  unique_id: V4GDVN4NTNkhCZqgWzhPhHQRzvelL57Q
+zwave.aeotec_zw090_zstick_gen5_us:
+  name:
+  platform: zwave
+  unique_id: node-1
+sensor.alarm_type:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528065
+sensor.alarm_level:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528081
+binary_sensor.sensor:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076463104
+binary_sensor.fibaro_system_fgfs101_flood_sensor_general:
+  name: Water Heater Motion Sensor
+  platform: zwave
+  unique_id: 2-72057594078232577
+binary_sensor.fibaro_system_fgfs101_flood_sensor_flood:
+  name: Water Heater Flood Sensor
+  platform: zwave
+  unique_id: 2-72057594078232657
+zwave.fibaro_system_fgfs101_flood_sensor:
+  name:
+  platform: zwave
+  unique_id: node-2
+sensor.fibaro_system_fgfs101_flood_sensor_temperature:
+  name: Water Heater Ambient Temperature
+  platform: zwave
+  unique_id: 2-72057594076479506
+switch.water_shutoff_switch:
+  name: Water Heater Shut-Off Switch
+  platform: zwave
+  unique_id: 3-72057594093060096
+zwave.dome_water_shutoff_valve:
+  name:
+  platform: zwave
+  unique_id: node-3
